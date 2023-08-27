@@ -1,7 +1,7 @@
 export const packages = [
   {
     id: 1,
-    description: "Caracas Fly, el único túnel de viento de venezuela recreativoy profesional para toda la familia.",
+    description: "Caracas Fly, el único túnel de viento de venezuela recreativo y profesional para toda la familia.",
     image: "/images/caracas-fly.webp",
     timeInit: "12:00 pm",
     timeEndEstimated: "8:00 pm",
