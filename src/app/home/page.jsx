@@ -1,10 +1,12 @@
 import GridHomeLayout from '../components/GridLayout';
+import yummy_banner from '../../../public/images/yummy-experience.svg'
+import Image from 'next/image';
 
 export default function Home() {
     return (
         <>
          
-          <header className='container first-line:h-20 bg-[#06926e]'>
+          <header className='w-full first-line:h-20 bg-[#06926e]'>
 
             <nav className='flex flex-wrap flex-row justify-between'>
               <div>
@@ -29,10 +31,10 @@ export default function Home() {
               
             </nav>
 
-            <h2 className='text-white text-xl title-font ml-4 font-bold font-sans'>Hola, Codicon</h2>
+            <h2 className='text-white text-xl title-font ml-5 font-bold font-sans'>Hola, Codicon</h2>
 
-            <form action method="post" className='flex container w-full justify-center items-end m-1'>
-              <div className='w-full p-3'>
+            <form action method="post" className='flex container w-full justify-center items-end m-1 max-w-[500px]'>
+              <div className='w-full p-3 pt-0'>
                 <input className='w-full text-white bg-gray-100 bg-opacity-50 rounded-full border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-gray-200 text-base font-sans outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out' type='email' placeholder='🔎 ¿De qué tienes ganas hoy?'/>
               </div>
             </form>
@@ -40,7 +42,9 @@ export default function Home() {
           </header>
 
             <div className='w-auto mb-[16px] mx-[16px]'>
-              <div className='container h-[120px] mt-[16px] rounded-lg bg-red-500'></div>
+              <div className='container h-auto mt-[16px] rounded-lg bg-red-500'>
+                <Image src={yummy_banner} alt='Banner Yummy Experience' className='w-auto h-auto bg-cover rounded-lg'></Image>
+              </div>
             </div>
           
             <GridHomeLayout/> 
