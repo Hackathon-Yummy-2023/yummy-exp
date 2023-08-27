@@ -11,9 +11,8 @@ export default function ItineraryPage() {
                 <h2 className="text-3xl font-semibold text-white self-start"><span className="font-bold text-[#5e0e8b]">Paquete Yummy Experience:</span> Caracas Fly</h2>
                 <p className="text-3xl font-semibold text-white self-start"><span className="font-bold text-[#5e0e8b]">Precio:</span> $200,00</p>
             </div>
-            <Image width={186} height={186} src="/images/qr-code.svg" alt="Código QR" title="Código QR" className="bg-white w-full h-auto " />
             <ol className="flex flex-col justify-center items-center gap-y-7">
-                <IteneraryItem 
+                {/* <IteneraryItem 
                     title={"Yummy Rider"}
                     description={"De: El Paraiso, Caracas - A: Caracas Fly, Caracas"}
                     price={"$20,00"}
@@ -21,7 +20,7 @@ export default function ItineraryPage() {
                     startTime={"27 / 08/ 23 11:30am"}
                     endTime={"27 / 08/ 23 11:50pm"}
                     index={1}
-                />
+                /> */}
                 <IteneraryItem 
                     title={"Caracas Fly"}
                     description={"El único túnel de viento de venezuela recreativo y profesional para toda la familia."}
@@ -31,7 +30,7 @@ export default function ItineraryPage() {
                     endTime={"27 / 08/ 23 08:00pm"}
                     index={2}
                 />
-                <IteneraryItem 
+                {/* <IteneraryItem 
                     title={"Yummy Rider"}
                     description={"De: Caracas Fly, Caracas - A: El Paraiso, Caracas"}
                     price={"$20,00"}
@@ -39,11 +38,11 @@ export default function ItineraryPage() {
                     startTime={"27 / 08/ 23 08:10pm"}
                     endTime={"27 / 08/ 23 09:10pm"}
                     index={3}
-                />
+                /> */}
             </ol>
 
             <Link href="/payment" className="w-full">            
-                <button className="text-white text-2xl bg-[#5e0e8b] w-full rounded-full font-semibold py-1 justify-self-end">
+                <button disabled={true} className="text-white text-2xl bg-[#5e0e8b] w-full rounded-full font-semibold py-1 justify-self-end">
                     Pagar
                 </button>
             </Link>
