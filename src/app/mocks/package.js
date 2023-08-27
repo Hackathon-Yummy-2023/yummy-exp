@@ -1,24 +1,25 @@
 export const packages = [
   {
     id: 1,
-    description: "Caracas Fly, el único túnel de viento de venezuela recreativo y profesional para toda la familia.",
+    description:
+      "Caracas Fly, el único túnel de viento de venezuela recreativo y profesional para toda la familia.",
     image: "/images/caracas-fly.jpeg",
     rydeTo: {
       from: "De: El Paraiso, Caracas - A: Caracas Fly, Caracas",
       price: "$20,00",
       startTime: "27 / 08/ 23 11:30am",
-      endTime: "27 / 08/ 23 11:50pm"
+      endTime: "27 / 08/ 23 11:50pm",
     },
     rydeFrom: {
       from: "De: Caracas Fly, Caracas - A: El Paraiso, Caracas",
       price: "$20,00",
       startTime: "27 / 08/ 23 08:10pm",
-      endTime: "27 / 08/ 23 09:10pm"
+      endTime: "27 / 08/ 23 09:10pm",
     },
     timeInit: "27 / 08/ 23 08:10pm",
-    timeEndEstimated:"27 / 08/ 23 09:10pm",
+    timeEndEstimated: "27 / 08/ 23 09:10pm",
     placeReserve: "Caracas Fly",
-    price: "200,00$",
+    price: 200,
   },
   {
     id: 2,
@@ -28,18 +29,18 @@ export const packages = [
       from: "De: El Paraiso, Caracas - A: La guaira, naiguata",
       price: "$20,00",
       startTime: "27 / 08/ 23 8:30am",
-      endTime: "27 / 08/ 23 10:00pm"
+      endTime: "27 / 08/ 23 10:00pm",
     },
     rydeFrom: {
       from: "De: naiguata, Caracas - A: El Paraiso, Caracas",
       price: "$20,00",
       startTime: "27 / 08/ 23 08:10pm",
-      endTime: "27 / 08/ 23 09:10pm"
+      endTime: "27 / 08/ 23 09:10pm",
     },
     timeInit: "27 / 08/ 23 08:10pm",
-    timeEndEstimated:"27 / 08/ 23 09:10pm",
+    timeEndEstimated: "27 / 08/ 23 09:10pm",
     placeReserve: "Scubatec Dive Center",
-    price: "90,00$",
+    price: 90,
   },
   {
     id: 3,
@@ -49,18 +50,18 @@ export const packages = [
       from: "De: El Paraiso, Caracas - A: La guaira, naiguata",
       price: "$20,00",
       startTime: "27 / 08/ 23 8:30am",
-      endTime: "27 / 08/ 23 10:00pm"
+      endTime: "27 / 08/ 23 10:00pm",
     },
     rydeFrom: {
       from: "De: naiguata, Caracas - A: El Paraiso, Caracas",
       price: "$20,00",
       startTime: "27 / 08/ 23 08:10pm",
-      endTime: "27 / 08/ 23 09:10pm"
+      endTime: "27 / 08/ 23 09:10pm",
     },
     timeInit: "27 / 08/ 23 08:10pm",
-    timeEndEstimated:"27 / 08/ 23 09:10pm",
+    timeEndEstimated: "27 / 08/ 23 09:10pm",
     placeReserve: "La casa de los gritos",
-    price: "8,00 $",
+    price: 80,
   },
   {
     id: 4,
@@ -70,22 +71,26 @@ export const packages = [
       from: "De: El Paraiso, Caracas - A: La guaira, naiguata",
       price: "$20,00",
       startTime: "27 / 08/ 23 8:30am",
-      endTime: "27 / 08/ 23 10:00pm"
+      endTime: "27 / 08/ 23 10:00pm",
     },
     rydeFrom: {
       from: "De: naiguata, Caracas - A: El Paraiso, Caracas",
       price: "$20,00",
       startTime: "27 / 08/ 23 08:10pm",
-      endTime: "27 / 08/ 23 09:10pm"
+      endTime: "27 / 08/ 23 09:10pm",
     },
     timeInit: "27 / 08/ 23 08:10pm",
-    timeEndEstimated:"27 / 08/ 23 09:10pm",
+    timeEndEstimated: "27 / 08/ 23 09:10pm",
     placeReserve: "Jungle Beats",
-    price: "30,00 $",
+    price: 60,
   },
-]
+];
 
-export const packageExperiences = packages.map(a => ({
-  id: a.id, description: a.description, image: a.image, peopleCount: a.peopleCount}))
+export const packageExperiences = packages.map((a) => ({
+  id: a.id,
+  description: a.description,
+  image: a.image,
+  peopleCount: a.peopleCount,
+}));
 
-export const packageItinerary = (id) => packages.find(a => a.id === id)
+export const packageItinerary = (id) => packages.find((a) => a.id === id);
