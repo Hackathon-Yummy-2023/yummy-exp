@@ -35,17 +35,17 @@ export default function Home() {
 
             <form action method="post" className='flex container w-full justify-center items-end m-1 max-w-[500px]'>
               <div className='w-full p-3 pt-0'>
-                <input className='w-full text-white bg-gray-100 bg-opacity-50 rounded-full border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-gray-200 text-base font-sans outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out' type='email' placeholder='🔎 ¿De qué tienes ganas hoy?'/>
+                <input className='w-full text-white bg-gray-100 bg-opacity-50 rounded-full border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-gray-200 text-base font-sans outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out' type='email' placeholder='🔎 ¿De qué tienes ganas hoy?'/>
               </div>
             </form>
 
           </header>
 
-            <div className='w-auto mb-[16px] mx-[16px]'>
+            <a href="localhost:3000/experience"  className='w-auto mb-[16px] mx-[16px]'>
               <div className='container h-auto mt-[16px] rounded-lg bg-red-500'>
                 <Image src={yummy_banner} alt='Banner Yummy Experience' className='w-auto h-auto bg-cover rounded-lg'></Image>
               </div>
-            </div>
+            </a>
           
             <GridHomeLayout/> 
             <GridHomeLayout/> 
