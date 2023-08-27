@@ -9,15 +9,15 @@ function GridHomeLayout () {
         <div>
         <TextGrid />
         <main className='container flex flex-nowrap gap-1 rounded-t-md'>
-            <div className='text-center w-36 h-36 bg-red-400 rounded-lg'>
+            <button className='text-center w-36 h-36 bg-red-400 rounded-lg'>
                 <Image src={delivery} width={560} height={560} alt="ilustración 3D sobre Delivery" className='w-full h-full rounded-lg'/>
-            </div>
-            <div className='text-center w-36 h-36 bg-red-400 rounded-lg'>
+            </button>
+            <button className='text-center w-36 h-36 bg-red-400 rounded-lg'>
                 <Image src={burguer} width={550} height={550} alt="ilustración 3D sobre Delivery" className='w-full h-full bg-cover rounded-lg'/>
-            </div>
-            <div className='text-center w-36 h-36 bg-red-400 rounded-lg'>
+            </button>
+            <button className='text-center w-36 h-36 bg-red-400 rounded-lg'>
                 <Image src={bandera} width={550} height={550} alt="ilustración 3D sobre Delivery" className='w-full h-full bg-cover rounded-lg'/>
-            </div>
+            </button>
         </main>
         </div>  
     )

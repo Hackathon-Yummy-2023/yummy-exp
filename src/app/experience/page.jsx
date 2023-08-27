@@ -10,9 +10,9 @@ const ChooseExperience = () => {
       {packageExperiences.map((item) => (
         <Card
           key={item.id}
+          id={item.id}
           description={item.description}
           image={item.image}
-          peopleCount={item.peopleCount}
         />
       ))}
     </main>

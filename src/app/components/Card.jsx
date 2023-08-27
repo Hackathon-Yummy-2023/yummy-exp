@@ -1,13 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-export const Card = ({ image, description, peopleCount }) => {
-  const handleClick = () => {
-    console.log("Card clicked!");
-  };
-
+export const Card = ({ image, description, peopleCount, id }) => {
   return (
-    <a href="#" className="block">
+    <Link href={`/itinerary?id=${id}`} className="block">
       <article className="relative rounded-lg shadow-md border border-gray-300 mb-4">
         <div className="relative">
           <Image
@@ -24,6 +21,6 @@ export const Card = ({ image, description, peopleCount }) => {
           </div>
         </div>
       </article>
-    </a>
+    </Link>
   );
 };
