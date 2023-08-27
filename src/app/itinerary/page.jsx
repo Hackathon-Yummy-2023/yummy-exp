@@ -1,7 +1,5 @@
 "use client";
 
-// import { packageItinerary } from "../../mocks/package"
-import Image from "next/image";
 import { IteneraryItem } from "../components/IteneraryItem";
 import Link from "next/link";
 import { packageItinerary } from "../mocks/package";
@@ -11,9 +9,6 @@ export default function ItineraryPage() {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
   const itinerary = packageItinerary(parseInt(id, 10));
-
-  console.log(typeof id);
-  console.log(itinerary);
 
   return (
     <main className="bg-[#bb92d4] h-auto px-6 py-6 flex flex-col justify-start items-center gap-y-10">
@@ -26,7 +21,7 @@ export default function ItineraryPage() {
           {itinerary.placeReserve}
         </h2>
         <p className="text-3xl font-semibold text-white self-start">
-          <span className="font-bold text-[#5e0e8b]">Precio:</span> {itinerary.price}
+          <span className="font-bold text-[#5e0e8b]">Precio:</span> {`$${itinerary.price + 40},00`}
         </p>
       </div>
       <ol className="flex flex-col justify-center items-center gap-y-7">
@@ -42,7 +37,7 @@ export default function ItineraryPage() {
         <IteneraryItem
           title={itinerary?.placeReserve}
           description={itinerary?.description}
-          price={itinerary?.price}
+          price={`$${itinerary.price},00`}
           iconImage={"/images/ticket-icon.svg"}
           startTime={itinerary?.timeInit}
           endTime={itinerary?.timeEndEstimated}

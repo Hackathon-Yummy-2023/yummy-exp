@@ -19,7 +19,7 @@ export const packages = [
     timeInit: "27 / 08/ 23 08:10pm",
     timeEndEstimated: "27 / 08/ 23 09:10pm",
     placeReserve: "Caracas Fly",
-    price: "200,00$",
+    price: 200,
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ export const packages = [
     timeInit: "27 / 08/ 23 08:10pm",
     timeEndEstimated: "27 / 08/ 23 09:10pm",
     placeReserve: "Scubatec Dive Center",
-    price: "90,00$",
+    price: 90,
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ export const packages = [
     timeInit: "27 / 08/ 23 08:10pm",
     timeEndEstimated: "27 / 08/ 23 09:10pm",
     placeReserve: "La casa de los gritos",
-    price: "8,00 $",
+    price: 80,
   },
   {
     id: 4,
@@ -82,7 +82,7 @@ export const packages = [
     timeInit: "27 / 08/ 23 08:10pm",
     timeEndEstimated: "27 / 08/ 23 09:10pm",
     placeReserve: "Jungle Beats",
-    price: "30,00 $",
+    price: 60,
   },
 ];
 
