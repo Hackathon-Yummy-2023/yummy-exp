@@ -41,7 +41,7 @@ export default function Home() {
 
           </header>
 
-            <a href="https://localhost:3000/experience" className='w-auto mb-[16px] mx-[16px]'>
+            <a href="/experience" className='w-auto mb-[16px] mx-[16px]'>
               <div className='container h-auto mt-[16px] rounded-lg bg-red-500'>
                 <Image src={yummy_banner} alt='Banner Yummy Experience' className='w-auto h-auto bg-cover rounded-lg'></Image>
               </div>
