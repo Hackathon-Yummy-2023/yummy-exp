@@ -1,25 +1,39 @@
 import Image from "next/image"
 
-const IteneraryItem = () => {
+const IteneraryItem = ({
+    iconImage,
+    title,
+    description,
+    price,
+    startTime,
+    endTime,
+    index
+}) => {
+    const indexes = {
+        1: "after:content-['1']",
+        2: "after:content-['2']",
+        3: "after:content-['3']",
+    }
     return (
-        <li>
-            <div>
-                <Image src="" />
+        <li className={`bg-white rounded-md p-4 shadow-lg relative after:w-10 after:h-10 ${indexes[index]} after:bg-[#5e0e8b] after:rounded-full after:absolute after:-top-4 after:-right-4 after:text-white after:font-bold after:flex after:justify-center after:items-center after:text-xl after:shadow-md`}>
+            <div className="flex justify-start items-start gap-x-5 mb-4 border-b-2 border-b-slate-200 pb-4">
+                <Image 
+                    src={iconImage}
+                    alt={`Icono de ${title}`}
+                    title={`Icono de ${title}`}
+                    width={60} 
+                    height={60} 
+                />
                 <div>
-                    <h2>Restaurant</h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type 
-                        specimen book.
-                    </p>
+                    <h3 className="text-3xl font-bold mb-2">{title}</h3>
+                    <p className="text-lg leading-7">{description}</p>
                 </div>
             </div>
-            <div>
-                <span>$1,00</span>
+            <div className="flex justify-start items-center gap-x-5">
+                <span className="text-2xl font-bold text-[#229171]">{price}</span>
                 <div>
-                    <date>27 / 08 / 23 - 12:00pm </date>
-                    <date>28 / 08 / 23 - 2:00pm </date>
+                    <date className="text-sm">{`${startTime} - `}</date>
+                    <date className="text-sm">{`${endTime}`}</date>
                 </div>
             </div>
         </li>
