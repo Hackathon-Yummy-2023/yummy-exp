@@ -8,7 +8,7 @@ import { packageExperiences } from "../mocks/package";
 const ChooseExperience = () => {
   return (
     <>
-    <main className="p-4 bg-[#bb92d4]">
+    <main className="p-4">
       <h1 className="font-sans text-lg font-bold text-center">Experiences</h1>
       {packageExperiences.map((item) => (
         <Card
