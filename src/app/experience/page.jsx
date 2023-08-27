@@ -4,9 +4,8 @@ import { Card } from "../components/card";
 import { packageExperiences } from "../mocks/package";
 
 const ChooseExperience = () => {
-
   return (
-    <div className="p-4">
+    <main className="p-4 bg-[#bb92d4]">
       <h1 className="text-2xl font-bold mb-4">Mis Tarjetas</h1>
       {packageExperiences.map((item) => (
         <Card
@@ -16,7 +15,7 @@ const ChooseExperience = () => {
           peopleCount={item.peopleCount}
         />
       ))}
-    </div>
+    </main>
   );
 };
 
