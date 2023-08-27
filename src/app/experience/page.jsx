@@ -1,7 +1,7 @@
 import React from "react";
-import { Card } from "../../components/card";
+import { Card } from "../components/card";
 
-import { packageExperiences } from "../../mocks/package";
+import { packageExperiences } from "../mocks/package";
 
 const ChooseExperience = () => {
 

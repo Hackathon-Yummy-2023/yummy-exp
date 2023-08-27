@@ -1,26 +1,29 @@
 import Image from 'next/image';
 import TextGrid from './TextGrid';
 
-function IconsAssets () {
-    return (
-        <Image
-            alt=''
-            src={image}
-            placeholder=''
-            width="42px"
-            height="16px"
-        ></Image>
-    )
-}
-
 function GridHomeLayout () {
     return (
         <>
         <TextGrid />
-        <main className='container grid mx-auto'>
-            <div className=''></div>
-            <div className=''></div>
-            <div className=''></div>
+        <main className='container flex px-5 flex-wrap py-25 mx-auto'>
+            <div className=''>
+                <Image
+                    alt=""
+                    
+                >
+
+                </Image>
+            </div>
+            <div className=''>
+                <Image alt="">
+
+                </Image>
+            </div>
+            <div className=''>
+                <Image alt='' width="42px" height="16px">
+
+                </Image>
+            </div>
         </main>
         <TextGrid />
         </>
