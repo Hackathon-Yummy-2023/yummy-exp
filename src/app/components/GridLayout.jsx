@@ -3,31 +3,20 @@ import TextGrid from './TextGrid';
 
 function GridHomeLayout () {
     return (
-        <>
+        <div>
         <TextGrid />
-        <main className='container flex px-5 flex-wrap py-25 mx-auto'>
-            <div className=''>
-                <Image
-                    alt=""
-                    
-                >
-
-                </Image>
+        <main className='container flex flex-nowrap gap-1 p-1 rounded-t-md'>
+            <div className='text-center w-36 h-36 bg-red-400 rounded-lg'>
+                <h1>Hola</h1>
             </div>
-            <div className=''>
-                <Image alt="">
-
-                </Image>
+            <div className='text-center w-36 h-36 bg-red-400 rounded-lg'>
+                <h1>Hola</h1>
             </div>
-            <div className=''>
-                <Image alt='' width="42px" height="16px">
-
-                </Image>
+            <div className='text-center w-36 h-36 bg-red-400 rounded-lg'>
+                <h1>Hola</h1>
             </div>
         </main>
-        <TextGrid />
-        </>
-        
+        </div>  
     )
 }
 
