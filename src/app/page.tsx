@@ -35,7 +35,7 @@ export default function Home() {
 
             <form action method="post" className='flex container w-full justify-center items-end m-1 max-w-[500px]'>
               <div className='w-full p-3 pt-0'>
-                <input className='w-full  bg-gray-100 bg-opacity-50 rounded-full border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-gray-200 text-base font-sans outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out' type='email' placeholder='🔎 ¿De qué tienes ganas hoy?'/>
+                <input className='w-full  bg-green-100 bg-opacity-50 rounded-full border border-green-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-gray-200 text-base font-sans outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out' type='email' placeholder='🔎 ¿De qué tienes ganas hoy?'/>
               </div>
             </form>
 
